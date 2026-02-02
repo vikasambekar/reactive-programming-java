@@ -146,6 +146,72 @@ public class FluxService {
             System.out.println(data + " on each");
         });
     }
+
+    // Difference between map, flatMap and flatMapMany using Mono and Flux
+
+    // ------------------------------------------------------------
+// 1. map with Mono
+// map transforms the value inside Mono
+// If the mapper returns a Mono, the result becomes Mono<Mono<T>>
+// map does NOT flatten
+    public Mono<Mono<String>> mapWithMono() {
+//        return Mono.just("vikas")
+//                .map(String::toUpperCase); ----> Mono<String>
+        return Mono.just("vikas")
+                .map(name -> Mono.just(name.toUpperCase()));
+    }
+
+    // ------------------------------------------------------------
+// 2. flatMap with Mono
+// flatMap is used when the mapper returns Mono<R>
+// It flattens Mono<Mono<R>> into Mono<R>
+    public Mono<String> flatMapWithMono() {
+        return Mono.just("vikas")
+                .flatMap(data -> Mono.just("1"));
+    }
+
+    // ------------------------------------------------------------
+// 3. flatMapMany with Mono
+// Used when a single value needs to produce multiple values
+// Mono<T> -> Flux<R>
+    public Flux<String> flatMapManyWithMono() {
+        return Mono.just("vikas")
+                .flatMapMany(name ->
+                        Flux.just("Hello " + name, "Bye " + name)
+                );
+    }
+
+    // ------------------------------------------------------------
+// 4. map with Flux
+// map transforms each value in Flux
+// If the mapper returns Flux, the result becomes Flux<Flux<T>>
+// map does NOT flatten
+    public Flux<Flux<String>> mapWithFlux() {
+        return Flux.just("vikas")
+                .map(data -> Flux.just("1"));
+    }
+
+    // ------------------------------------------------------------
+// 5. flatMap with Flux
+// flatMap flattens inner publishers
+// With Flux, the mapper can return Mono<R> or Flux<R>
+// Final result is always Flux<R>
+    public Flux<String> flatMapWithFlux() {
+        return Flux.just("vikas")
+                .flatMap(data -> Mono.just("1"));
+        // or
+        // .flatMap(data -> Flux.just("1"));
+    }
+
+    // ------------------------------------------------------------
+// 6. flatMapMany after converting Flux to Mono
+// collectList converts Flux<T> to Mono<List<T>>
+// flatMapMany is then applied on Mono
+    public Flux<String> flatMapManyAfterCollectList() {
+        return Flux.just("vikas")
+                .collectList()
+                .flatMapMany(list -> Flux.just("1"));
+    }
 }
 
 /*
