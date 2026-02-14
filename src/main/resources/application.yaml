@@ -20,4 +20,9 @@ spring:
 
 logging:
   level:
-    org.springframework.r2dbc: info
+    org.springframework.r2dbc: INFO
+    reactor.netty: INFO
+    com.reactive: DEBUG
+
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

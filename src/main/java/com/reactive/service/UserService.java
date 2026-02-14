@@ -21,28 +21,21 @@ public class UserService {
     }
 
     public Mono<User> createUser(User user) {
-        log.info("Request received to create user with email={}", user.getEmail());
 
         return userRepository.save(user)
                 .doOnSubscribe(sub -> log.debug("Creating user in DB"))
-                .doOnSuccess(savedUser -> {
-                    if (!ObjectUtils.isEmpty(savedUser)) {
-                        log.info("User created successfully with id={}", savedUser.getId());
-                    }
-                })
+                .doOnSuccess(ObjectUtils::isEmpty)
                 .doOnError(error -> log.error("Error occurred while creating user", error));
     }
 
     public Flux<User> getAllUsers() {
         log.info("Fetching all users");
 
-        Flux<User> userFlux = userRepository.findAll()
+        return userRepository.findAll()
                 .doOnSubscribe(sub -> log.debug("Querying all users from DB"))
                 .doOnComplete(() -> log.info("Completed fetching all users"))
                 .doOnError(error ->
                         log.error("Error occurred while fetching users", error));
-        System.out.printf("Users flux ---->"+userFlux.map(user -> user.getName()));
-        return userFlux;
     }
 
     public Mono<User> getUserById(Long id) {
