@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/REACTIVE_DB
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+
+  sql:
+    init:
+      mode: always

@@ -20,11 +20,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyConfig {
 
-    /*
-        Here we are creating the bean of AppConfig
-     */
     @Bean
-    private AppConfig appConfig() {
+    public AppConfig appConfig() {
         return new AppConfig();
     }
 }
