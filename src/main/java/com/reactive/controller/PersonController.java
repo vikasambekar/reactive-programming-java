@@ -18,6 +18,8 @@ public class PersonController {
     private final PersonRepository personRepository;
     private final PersonProducer personProducer;
 
+    private final String TEST_TOPIC = "test-topic";
+
     public PersonController(PersonRepository personRepository, PersonProducer personProducer) {
         this.personRepository = personRepository;
         this.personProducer = personProducer;
@@ -28,7 +30,7 @@ public class PersonController {
         return personRepository.save(person)
                 .flatMap(savedPerson ->
                         personProducer
-                                .send("test-topic", savedPerson.getId(), savedPerson)
+                                .send(TEST_TOPIC, savedPerson.getId(), savedPerson)
                                 .thenReturn("Event published Successfully!")
                 );
     }
