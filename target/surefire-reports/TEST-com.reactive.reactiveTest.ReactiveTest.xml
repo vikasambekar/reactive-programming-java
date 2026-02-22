@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reactive.reactiveTest.ReactiveTest" time="3.096" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/test-classes:/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/classes:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.3.5/spring-boot-starter-webflux-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.5/spring-boot-starter-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot/3.3.5/spring-boot-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.5/spring-boot-autoconfigure-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.5/spring-boot-starter-logging-3.3.5.jar:/Users/vikasambekar/.m2/repository/ch/qos/logback/logback-classic/1.5.11/logback-classic-1.5.11.jar:/Users/vikasambekar/.m2/repository/ch/qos/logback/logback-core/1.5.11/logback-core-1.5.11.jar:/Users/vikasambekar/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/vikasambekar/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/vikasambekar/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/vikasambekar/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/vikasambekar/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.5/spring-boot-starter-json-3.3.5.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.3.5/spring-boot-starter-reactor-netty-3.3.5.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.23/reactor-netty-http-1.1.23.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-http/4.1.114.Final/netty-codec-http-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-http2/4.1.114.Final/netty-codec-http2-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-web/6.1.14/spring-web-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-beans/6.1.14/spring-beans-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-webflux/6.1.14/spring-webflux-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-data-r2dbc/3.3.5/spring-boot-starter-data-r2dbc-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/data/spring-data-r2dbc/3.3.5/spring-data-r2dbc-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/data/spring-data-relational/3.3.5/spring-data-relational-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/data/spring-data-commons/3.3.5/spring-data-commons-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-jdbc/6.1.14/spring-jdbc-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-r2dbc/6.1.14/spring-r2dbc-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/vikasambekar/.m2/repository/io/r2dbc/r2dbc-spi/1.0.0.RELEASE/r2dbc-spi-1.0.0.RELEASE.jar:/Users/vikasambekar/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/vikasambekar/.m2/repository/org/postgresql/r2dbc-postgresql/1.0.7.RELEASE/r2dbc-postgresql-1.0.7.RELEASE.jar:/Users/vikasambekar/.m2/repository/com/ongres/scram/client/2.1/client-2.1.jar:/Users/vikasambekar/.m2/repository/com/ongres/scram/common/2.1/common-2.1.jar:/Users/vikasambekar/.m2/repository/com/ongres/stringprep/saslprep/1.1/saslprep-1.1.jar:/Users/vikasambekar/.m2/repository/com/ongres/stringprep/stringprep/1.1/stringprep-1.1.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/reactor-core/3.6.11/reactor-core-3.6.11.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.23/reactor-netty-core-1.1.23.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-handler/4.1.114.Final/netty-handler-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-common/4.1.114.Final/netty-common-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver/4.1.114.Final/netty-resolver-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-buffer/4.1.114.Final/netty-buffer-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport/4.1.114.Final/netty-transport-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.114.Final/netty-transport-native-unix-common-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec/4.1.114.Final/netty-codec-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-handler-proxy/4.1.114.Final/netty-handler-proxy-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-socks/4.1.114.Final/netty-codec-socks-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver-dns/4.1.114.Final/netty-resolver-dns-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-dns/4.1.114.Final/netty-codec-dns-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.114.Final/netty-resolver-dns-native-macos-4.1.114.Final-osx-x86_64.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.114.Final/netty-resolver-dns-classes-macos-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport-native-epoll/4.1.114.Final/netty-transport-native-epoll-4.1.114.Final-linux-x86_64.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.114.Final/netty-transport-classes-epoll-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/r2dbc/r2dbc-pool/1.0.2.RELEASE/r2dbc-pool-1.0.2.RELEASE.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/addons/reactor-pool/1.0.8/reactor-pool-1.0.8.jar:/Users/vikasambekar/.m2/repository/org/springframework/kafka/spring-kafka/3.2.4/spring-kafka-3.2.4.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-context/6.1.14/spring-context-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-aop/6.1.14/spring-aop-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-expression/6.1.14/spring-expression-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-messaging/6.1.14/spring-messaging-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-tx/6.1.14/spring-tx-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/retry/spring-retry/2.0.10/spring-retry-2.0.10.jar:/Users/vikasambekar/.m2/repository/org/apache/kafka/kafka-clients/3.7.1/kafka-clients-3.7.1.jar:/Users/vikasambekar/.m2/repository/com/github/luben/zstd-jni/1.5.6-3/zstd-jni-1.5.6-3.jar:/Users/vikasambekar/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/Users/vikasambekar/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar:/Users/vikasambekar/.m2/repository/io/micrometer/micrometer-observation/1.13.6/micrometer-observation-1.13.6.jar:/Users/vikasambekar/.m2/repository/io/micrometer/micrometer-commons/1.13.6/micrometer-commons-1.13.6.jar:/Users/vikasambekar/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.5/spring-boot-starter-test-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-test/3.3.5/spring-boot-test-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.5/spring-boot-test-autoconfigure-3.3.5.jar:/Users/vikasambekar/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/vikasambekar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/vikasambekar/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/vikasambekar/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/vikasambekar/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/vikasambekar/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/vikasambekar/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/vikasambekar/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/Users/vikasambekar/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/vikasambekar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/vikasambekar/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/Users/vikasambekar/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/Users/vikasambekar/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/vikasambekar/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/Users/vikasambekar/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/vikasambekar/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/vikasambekar/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/vikasambekar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-core/6.1.14/spring-core-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-jcl/6.1.14/spring-jcl-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-test/6.1.14/spring-test-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/surefire/surefirebooter-20260222232335622_3.jar /Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/surefire 2026-02-22T23-23-35_595-jvmRun1 surefire-20260222232335622_1tmp surefire_0-20260222232335622_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/test-classes:/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/classes:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.3.5/spring-boot-starter-webflux-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter/3.3.5/spring-boot-starter-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot/3.3.5/spring-boot-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.3.5/spring-boot-autoconfigure-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.3.5/spring-boot-starter-logging-3.3.5.jar:/Users/vikasambekar/.m2/repository/ch/qos/logback/logback-classic/1.5.11/logback-classic-1.5.11.jar:/Users/vikasambekar/.m2/repository/ch/qos/logback/logback-core/1.5.11/logback-core-1.5.11.jar:/Users/vikasambekar/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.23.1/log4j-to-slf4j-2.23.1.jar:/Users/vikasambekar/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/vikasambekar/.m2/repository/org/slf4j/jul-to-slf4j/2.0.16/jul-to-slf4j-2.0.16.jar:/Users/vikasambekar/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/vikasambekar/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.3.5/spring-boot-starter-json-3.3.5.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.2/jackson-datatype-jdk8-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/Users/vikasambekar/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.17.2/jackson-module-parameter-names-2.17.2.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.3.5/spring-boot-starter-reactor-netty-3.3.5.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.23/reactor-netty-http-1.1.23.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-http/4.1.114.Final/netty-codec-http-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-http2/4.1.114.Final/netty-codec-http2-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-web/6.1.14/spring-web-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-beans/6.1.14/spring-beans-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-webflux/6.1.14/spring-webflux-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-data-r2dbc/3.3.5/spring-boot-starter-data-r2dbc-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/data/spring-data-r2dbc/3.3.5/spring-data-r2dbc-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/data/spring-data-relational/3.3.5/spring-data-relational-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/data/spring-data-commons/3.3.5/spring-data-commons-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-jdbc/6.1.14/spring-jdbc-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-r2dbc/6.1.14/spring-r2dbc-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/vikasambekar/.m2/repository/io/r2dbc/r2dbc-spi/1.0.0.RELEASE/r2dbc-spi-1.0.0.RELEASE.jar:/Users/vikasambekar/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/vikasambekar/.m2/repository/org/postgresql/r2dbc-postgresql/1.0.7.RELEASE/r2dbc-postgresql-1.0.7.RELEASE.jar:/Users/vikasambekar/.m2/repository/com/ongres/scram/client/2.1/client-2.1.jar:/Users/vikasambekar/.m2/repository/com/ongres/scram/common/2.1/common-2.1.jar:/Users/vikasambekar/.m2/repository/com/ongres/stringprep/saslprep/1.1/saslprep-1.1.jar:/Users/vikasambekar/.m2/repository/com/ongres/stringprep/stringprep/1.1/stringprep-1.1.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/reactor-core/3.6.11/reactor-core-3.6.11.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.23/reactor-netty-core-1.1.23.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-handler/4.1.114.Final/netty-handler-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-common/4.1.114.Final/netty-common-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver/4.1.114.Final/netty-resolver-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-buffer/4.1.114.Final/netty-buffer-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport/4.1.114.Final/netty-transport-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.114.Final/netty-transport-native-unix-common-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec/4.1.114.Final/netty-codec-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-handler-proxy/4.1.114.Final/netty-handler-proxy-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-socks/4.1.114.Final/netty-codec-socks-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver-dns/4.1.114.Final/netty-resolver-dns-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-codec-dns/4.1.114.Final/netty-codec-dns-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.114.Final/netty-resolver-dns-native-macos-4.1.114.Final-osx-x86_64.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.114.Final/netty-resolver-dns-classes-macos-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport-native-epoll/4.1.114.Final/netty-transport-native-epoll-4.1.114.Final-linux-x86_64.jar:/Users/vikasambekar/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.114.Final/netty-transport-classes-epoll-4.1.114.Final.jar:/Users/vikasambekar/.m2/repository/io/r2dbc/r2dbc-pool/1.0.2.RELEASE/r2dbc-pool-1.0.2.RELEASE.jar:/Users/vikasambekar/.m2/repository/io/projectreactor/addons/reactor-pool/1.0.8/reactor-pool-1.0.8.jar:/Users/vikasambekar/.m2/repository/org/springframework/kafka/spring-kafka/3.2.4/spring-kafka-3.2.4.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-context/6.1.14/spring-context-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-aop/6.1.14/spring-aop-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-expression/6.1.14/spring-expression-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-messaging/6.1.14/spring-messaging-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-tx/6.1.14/spring-tx-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/retry/spring-retry/2.0.10/spring-retry-2.0.10.jar:/Users/vikasambekar/.m2/repository/org/apache/kafka/kafka-clients/3.7.1/kafka-clients-3.7.1.jar:/Users/vikasambekar/.m2/repository/com/github/luben/zstd-jni/1.5.6-3/zstd-jni-1.5.6-3.jar:/Users/vikasambekar/.m2/repository/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar:/Users/vikasambekar/.m2/repository/org/xerial/snappy/snappy-java/1.1.10.5/snappy-java-1.1.10.5.jar:/Users/vikasambekar/.m2/repository/io/micrometer/micrometer-observation/1.13.6/micrometer-observation-1.13.6.jar:/Users/vikasambekar/.m2/repository/io/micrometer/micrometer-commons/1.13.6/micrometer-commons-1.13.6.jar:/Users/vikasambekar/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.3.5/spring-boot-starter-test-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-test/3.3.5/spring-boot-test-3.3.5.jar:/Users/vikasambekar/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.3.5/spring-boot-test-autoconfigure-3.3.5.jar:/Users/vikasambekar/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/vikasambekar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/vikasambekar/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/vikasambekar/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/vikasambekar/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/vikasambekar/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/vikasambekar/.m2/repository/org/assertj/assertj-core/3.25.3/assertj-core-3.25.3.jar:/Users/vikasambekar/.m2/repository/net/bytebuddy/byte-buddy/1.14.19/byte-buddy-1.14.19.jar:/Users/vikasambekar/.m2/repository/org/awaitility/awaitility/4.2.2/awaitility-4.2.2.jar:/Users/vikasambekar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.5/junit-jupiter-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.5/junit-jupiter-api-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/vikasambekar/.m2/repository/org/junit/platform/junit-platform-commons/1.10.5/junit-platform-commons-1.10.5.jar:/Users/vikasambekar/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.5/junit-jupiter-params-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.5/junit-jupiter-engine-5.10.5.jar:/Users/vikasambekar/.m2/repository/org/junit/platform/junit-platform-engine/1.10.5/junit-platform-engine-1.10.5.jar:/Users/vikasambekar/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/vikasambekar/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.19/byte-buddy-agent-1.14.19.jar:/Users/vikasambekar/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/vikasambekar/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/vikasambekar/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/vikasambekar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-core/6.1.14/spring-core-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-jcl/6.1.14/spring-jcl-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/springframework/spring-test/6.1.14/spring-test-6.1.14.jar:/Users/vikasambekar/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/vikasambekar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java/target/surefire/surefirebooter-20260222232335622_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.2"/>
+    <property name="user.name" value="vikasambekar"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/vikasambekar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/mf/thy89zz50tq97204_3_crgt80000gn/T/"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="/Users/vikasambekar/Documents/My work/development /backend/reactive-programming-java"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/vikasambekar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.2"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="monoConcatWithTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.05">
+    <system-out><![CDATA[23:23:35.867 [main] INFO reactor.Flux.ConcatArray.1 -- onSubscribe(FluxConcatArray.ConcatArraySubscriber)
+23:23:35.868 [main] INFO reactor.Flux.ConcatArray.1 -- request(unbounded)
+23:23:35.869 [main] INFO reactor.Flux.ConcatArray.1 -- onNext(Hello, I'm first mono)
+Hello, I'm first mono
+23:23:35.869 [main] INFO reactor.Flux.ConcatArray.1 -- onNext(Hello, I'm second mono)
+Hello, I'm second mono
+23:23:35.869 [main] INFO reactor.Flux.ConcatArray.1 -- onComplete()
+]]></system-out>
+  </testcase>
+  <testcase name="monoWithZipTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.002">
+    <system-out><![CDATA[data ---> [[This is the first mono here,This is the second mono here],This is the third mono here]
+]]></system-out>
+  </testcase>
+  <testcase name="monoFlatMapTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.001">
+    <system-out><![CDATA[23:23:35.874 [main] INFO reactor.Mono.Just.2 -- | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+23:23:35.874 [main] INFO reactor.Mono.Just.2 -- | request(unbounded)
+23:23:35.874 [main] INFO reactor.Mono.Just.2 -- | onNext(Hello Vikas, Keep learning)
+---->Hello
+---->Vikas,
+---->Keep
+---->learning
+23:23:35.874 [main] INFO reactor.Mono.Just.2 -- | onComplete()
+]]></system-out>
+  </testcase>
+  <testcase name="monoMapTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.0">
+    <system-out><![CDATA[23:23:35.875 [main] INFO reactor.Mono.Just.3 -- | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+23:23:35.875 [main] INFO reactor.Mono.Just.3 -- | request(unbounded)
+23:23:35.875 [main] INFO reactor.Mono.Just.3 -- | onNext(Hello Vikas, Keep learning)
+HELLO VIKAS, KEEP LEARNING
+23:23:35.875 [main] INFO reactor.Mono.Just.3 -- | onComplete()
+]]></system-out>
+  </testcase>
+  <testcase name="monoTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.0">
+    <system-out><![CDATA[23:23:35.876 [main] INFO reactor.Mono.Just.4 -- | onSubscribe([Synchronous Fuseable] Operators.ScalarSubscription)
+23:23:35.876 [main] INFO reactor.Mono.Just.4 -- | request(unbounded)
+23:23:35.876 [main] INFO reactor.Mono.Just.4 -- | onNext(Hello Vikas, Keep learning)
+data --->Hello Vikas, Keep learning
+23:23:35.876 [main] INFO reactor.Mono.Just.4 -- | onComplete()
+]]></system-out>
+  </testcase>
+  <testcase name="monoDelayElementsTest" classname="com.reactive.reactiveTest.ReactiveTest" time="3.012">
+    <system-out><![CDATA[23:23:35.881 [main] INFO reactor.Flux.ConcatMapNoPrefetch.5 -- onSubscribe(FluxConcatMapNoPrefetch.FluxConcatMapNoPrefetchSubscriber)
+23:23:35.881 [main] INFO reactor.Flux.ConcatMapNoPrefetch.5 -- request(unbounded)
+23:23:37.888 [parallel-1] INFO reactor.Flux.ConcatMapNoPrefetch.5 -- onNext(Hello, I'm first mono)
+parallel-1
+Hello, I'm first mono
+Terminated main thread
+]]></system-out>
+  </testcase>
+  <testcase name="monoFlatMapManyTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.006">
+    <system-out><![CDATA[23:23:38.894 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- onSubscribe([Synchronous Fuseable] FluxArray.ArraySubscription)
+23:23:38.895 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- request(unbounded)
+23:23:38.895 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- onNext(Hello)
+---->Hello
+23:23:38.895 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- onNext(Vikas,)
+---->Vikas,
+23:23:38.895 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- onNext(Keep)
+---->Keep
+23:23:38.895 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- onNext(learning)
+---->learning
+23:23:38.895 [main] INFO reactor.Flux.MonoFlatMapMany.6 -- onComplete()
+]]></system-out>
+  </testcase>
+  <testcase name="monoErrorTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.008">
+    <system-out><![CDATA[23:23:38.899 [main] INFO reactor.Mono.Error.7 -- onSubscribe([Fuseable] Operators.EmptySubscription)
+23:23:38.899 [main] INFO reactor.Mono.Error.7 -- request(unbounded)
+23:23:38.899 [main] ERROR reactor.Mono.Error.7 -- onError(java.lang.RuntimeException: Mono error emitted)
+23:23:38.899 [main] ERROR reactor.Mono.Error.7 -- 
+java.lang.RuntimeException: Mono error emitted
+	at com.reactive.reactiveTest.ReactiveTest.monoErrorTest(ReactiveTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+23:23:38.904 [main] ERROR reactor.core.publisher.Operators -- Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: java.lang.RuntimeException: Mono error emitted
+Caused by: java.lang.RuntimeException: Mono error emitted
+	at com.reactive.reactiveTest.ReactiveTest.monoErrorTest(ReactiveTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
+  </testcase>
+  <testcase name="monoZipTest" classname="com.reactive.reactiveTest.ReactiveTest" time="0.001">
+    <system-out><![CDATA[data --->[1, 2, 3, 4, 5, 6]
+]]></system-out>
+  </testcase>
+</testsuite>

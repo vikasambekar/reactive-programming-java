@@ -5,6 +5,7 @@ com/reactive/service/FluxService.class
 com/reactive/repository/PersonRepository.class
 com/reactive/controller/PersonController.class
 com/reactive/controller/UserController.class
+com/reactive/producer/PersonProducer.class
 com/reactive/enity/User.class
 com/reactive/service/UserService.class
 com/reactive/controller/TestClass.class
@@ -12,4 +13,5 @@ com/reactive/config/AppConfig.class
 com/reactive/service/FluxErrorService.class
 com/reactive/ReactiveApplication.class
 com/reactive/enity/MyFluxTest.class
+com/reactive/consumer/PersonConsumer.class
 com/reactive/repository/UserRepository.class

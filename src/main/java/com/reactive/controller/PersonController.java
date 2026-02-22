@@ -2,25 +2,37 @@ package com.reactive.controller;
 
 import com.reactive.enity.Person;
 import com.reactive.repository.PersonRepository;
-import org.springframework.web.bind.annotation.*;
+import com.reactive.producer.PersonProducer;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/persons")
+@RequestMapping("/person")
 public class PersonController {
 
-
     private final PersonRepository personRepository;
+    private final PersonProducer personProducer;
 
-    public PersonController(PersonRepository personRepository) {
+    public PersonController(PersonRepository personRepository, PersonProducer personProducer) {
         this.personRepository = personRepository;
+        this.personProducer = personProducer;
     }
 
     @PostMapping
-    Mono<Person> createPerson(@RequestBody Person person) {
-        return personRepository.save(person);
+    public Mono<String> createPerson(@RequestBody Person person) {
+        return personRepository.save(person)
+                .flatMap(savedPerson ->
+                        personProducer
+                                .send("test-topic", savedPerson.getId(), savedPerson)
+                                .thenReturn("Event published Successfully!")
+                );
     }
+
 
     @GetMapping
     Flux<Person> getPerson() {
