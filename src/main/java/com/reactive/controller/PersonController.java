@@ -3,6 +3,7 @@ package com.reactive.controller;
 import com.reactive.enity.Person;
 import com.reactive.repository.PersonRepository;
 import com.reactive.producer.PersonProducer;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,17 +14,13 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/person")
+@RequiredArgsConstructor
 public class PersonController {
 
     private final PersonRepository personRepository;
     private final PersonProducer personProducer;
 
     private final String TEST_TOPIC = "test-topic";
-
-    public PersonController(PersonRepository personRepository, PersonProducer personProducer) {
-        this.personRepository = personRepository;
-        this.personProducer = personProducer;
-    }
 
     @PostMapping
     public Mono<String> createPerson(@RequestBody Person person) {
@@ -34,7 +31,6 @@ public class PersonController {
                                 .thenReturn("Event published Successfully!")
                 );
     }
-
 
     @GetMapping
     Flux<Person> getPerson() {

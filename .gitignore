@@ -1,0 +1,63 @@
+# Maven / Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.h2.db
+*.h2.trace.db
+
+# Spring Boot
+spring-boot-*.properties
+spring-boot-*.yml
+!/src/main/resources/application*.yml
+
+# IDEs
+.idea/
+*.iws
+*.ipr
+*.iml
+.vscode/
+*.launch
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Lombok generated files (optional)
+*.lombok
+
+# Docker
+docker-compose.override.yml
+Dockerfile
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
